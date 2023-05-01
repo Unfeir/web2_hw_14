@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "hw-14"
+version = "0.1.0"
+description = ""
+authors = ["Anton Holovin <54354764+Unfeir@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "hw_14"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+uvicorn = {extras = ["basic"], version = "^0.22.0"}
+psycopg-binary = "^3.1.8"
+sqlalchemy = "^2.0.11"
+alembic = "^1.10.4"
+redis = "^4.5.4"
+jinja2 = "^3.1.2"
+python-multipart = "^0.0.6"
+cloudinary = "^1.32.0"
+libgravatar = "^1.0.4"
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+fastapi-mail = "^1.2.8"
+passlib = "^1.7.4"
+bcrypt = "^4.0.1"
+pydentic = {extras = ["dotenv"], version = "^0.0.1.dev3"}
+fastapi-limiter = "^0.1.5"
+psycopg2-binary = "^2.9.6"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^6.2.1"
+httpx = "^0.24.0"
+pytest = "^7.3.1"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
